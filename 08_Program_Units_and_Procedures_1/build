@@ -1,0 +1,13 @@
+#! /bin/bash
+# <number sign><exclamation mark> = so called hasbang, shebang.
+# It tells what program is supposed to interpret the script
+
+# Cleanup (see man rm for info on option -f) 
+rm -f testmod_main.o testmod.o mymod.mod a.out
+
+# Compilation
+gfortran -c testmod.f90
+gfortran -c testmod_main.f90
+
+# Linking 
+gfortran testmod.o testmod_main.o

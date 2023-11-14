@@ -1,0 +1,9 @@
+#! /bin/bash
+
+for i in {1..4}
+do
+    for x in 0.1 0.3 1.0 3.0
+    do
+	./a.out $i $x
+    done
+done

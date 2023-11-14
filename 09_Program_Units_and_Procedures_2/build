@@ -1,0 +1,5 @@
+#! /bin/bash
+gfortran -c file1.f90
+gfortran -c file2.f90
+gfortran -c file3.f90
+gfortran file1.o file2.o file3.o
