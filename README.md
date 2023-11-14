@@ -2,5 +2,10 @@
 
 Naming of the files is according to the program name:
 
-'program integerkind' -> file integerkind.f90
+```
+program integerkind
+...
+end program integerkind
+``` 
+--> filename =  `integerkind.f90`
 
