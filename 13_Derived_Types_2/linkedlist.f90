@@ -35,7 +35,7 @@ program linkedlist
      tail=>head
   end if
 
-    do i=2,iar   ! All the rest
+  do i=2,iar   ! All the rest
      p=>tail
      allocate(tail)
      tail%data=arg(i)

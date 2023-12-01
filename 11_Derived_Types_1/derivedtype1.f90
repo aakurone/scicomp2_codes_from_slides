@@ -2,7 +2,7 @@ program derivedtype1
   implicit none
   integer,parameter :: MAXBUF=10
   type :: record
-     character(MAXBUF) :: name
+     character(:),allocatable :: name
      integer :: count
      real :: value
   end type record

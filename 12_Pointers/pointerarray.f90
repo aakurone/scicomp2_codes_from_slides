@@ -18,4 +18,13 @@ program pointerarray
      print *,pa(i)%p
   end do
 
+  call pr(pa(1)%p)
+  
+contains
+  subroutine pr(b)
+    implicit none
+    integer,intent(in) :: b(:)
+    print *,b
+  end subroutine pr
+  
 end program pointerarray

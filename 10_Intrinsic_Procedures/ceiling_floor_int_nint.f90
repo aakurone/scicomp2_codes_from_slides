@@ -15,8 +15,10 @@ program ceiling_floor_int_nint
 
   do i=0,imax
      x=x1+i*dx
-     print *,x,ceiling(x), &
-           & floor(x),int(x),nint(x)
+     write(10,*) x,ceiling(x)
+     write(20,*) x,floor(x)
+     write(30,*) x,int(x),nint(x)
+     write(40,*) x,nint(x)
   end do
 
 end program ceiling_floor_int_nint

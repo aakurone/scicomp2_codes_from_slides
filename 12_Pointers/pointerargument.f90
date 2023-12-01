@@ -24,5 +24,4 @@ program pointerargument
   print *,'Before ',a,b
   call sub(p,q)
   print *,'After  ',a,b
-  print *,a,b
 end program pointerargument
