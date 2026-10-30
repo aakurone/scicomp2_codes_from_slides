@@ -7,5 +7,5 @@ program integerkind
 ...
 end program integerkind
 ``` 
---> filename =  `integerkind.f90`
+$\Longrightarrow$  filename =  `integerkind.f90`
 
