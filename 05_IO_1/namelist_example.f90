@@ -2,8 +2,8 @@
 ! Read input using the namelist construct.
 ! Example input:
 ! &nm
-! x=1.1
-! a(1:2)=1.2
+! x=1.1, 3*2.0, 
+! a=3*1, 10,
 ! c(1:10)='A'
 ! /
 !
@@ -23,20 +23,20 @@ program namelist_example
   fname='*undef*'
   write(c,'(70("-"))')
 
-  print *,'Before'
-  print *,x
-  print *,a
-  print *,trim(fname)
-  print *,c
+  write(0,*) 'Before'
+  write(0,*) x
+  write(0,*) a
+  write(0,*) trim(fname)
+  write(0,*) c
   print *
 
   read(5,nml=nm,iostat=ios)
   
-  print *,'After'
-  print *,x
-  print *,a
-  print *,trim(fname)
-  print *,c
+  write(0,*) 'After'
+  write(0,*) x
+  write(0,*) a
+  write(0,*) trim(fname)
+  write(0,*) c
   print *
   
   write(6,nml=nm) 
